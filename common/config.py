@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()  # Load environment variables from .env file
 
 class Config:
+    '''Configuration class for loading and validating environment variables.'''
     def __init__(self):
         # Load and validate configuration values from environment variables    
         self.load_values()
