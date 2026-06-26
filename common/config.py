@@ -12,7 +12,7 @@ class Config:
 
     def load_values(self):
         # load values from .env
-        self.tfl_api_urlfl_api_url = os.getenv("TFL_API_URL") 
+        self.tfl_api_url = os.getenv("TFL_API_URL") 
         self.kafka_servers = os.getenv("KAFKA_BOOTSTRAP_SERVERS")
         self.kafka_raw_topic = os.getenv("KAFKA_RAW_TOPIC")
         self.request_timeout = os.getenv("REQUEST_TIMEOUT")
